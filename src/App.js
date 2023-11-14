@@ -1,5 +1,6 @@
 import { Component } from 'react';
-import Clock from './components/Clock';
+// import Clock from './components/Clock';
+import SecondClock from './components/SecondClock';
 import './App.css';
 
 /**
@@ -58,7 +59,8 @@ class App extends Component {
         <p>
           سلام دوست عزیز
         </p>
-        {showClock ? <Clock date={date} color={color} /> : null}
+        {/* {showClock ? <Clock date={date} color={color} /> : null} */}
+        {showClock ? <SecondClock date={date} color={color} /> : null}
         <hr />
         <button onClick={this.clockChange} >
           نمایش ساعت
